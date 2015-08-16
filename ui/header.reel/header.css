@@ -1,0 +1,46 @@
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 0.4rem;
+    background: hsla(0, 0%, 15%, 0.4);
+    z-index: 100;
+}
+
+.Header > * {
+    margin: 0.4rem;
+}
+
+.Header .digit-Title {
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+}
+
+.Header-closeButton {
+    line-height: 1;
+    font-size: 24px;
+    padding: 0;
+    width: 2em;
+    height: 2em;
+    min-width: 0;
+    border: none;
+}
+
+.Header-closeButton:focus {
+    box-shadow: none;
+}
+
+.Header-closeButton.is-hidden {
+    visibility: hidden;
+}

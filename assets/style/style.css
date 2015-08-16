@@ -1,0 +1,55 @@
+
+/* 
+ * This file is reserved for your global style rules. 
+ */
+
+html {
+    /* Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px; /* Spacing of components */
+    color: #fff;
+    fill: currentColor;
+    background: hsl(0,0%, 15%) url(../images/bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Sizing of components */
+}
+
+
+/* Global overrides  -------------------------------------------- */
+
+.digit-Button .fa {
+    margin-left: .5em;
+}
+
+
+/* Loader -------------------------------------------- */
+
+.Loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-flex;
+    display: flex;
+}
+.Loader-logo {
+    display: block;
+    margin: auto;
+    width: 64px;
+    height: 64px;
+    background: url(../images/logo.svg) no-repeat center center;
+    background-size: 100% auto;
+    -webkit-animation: Loader--animate 3.6s linear infinite;
+            animation: Loader--animate 3.6s linear infinite;
+}
+
+@-webkit-keyframes Loader--animate { 100% { -webkit-transform: rotate(360deg); } }
+        @keyframes Loader--animate { 100% {         transform: rotate(360deg); } }

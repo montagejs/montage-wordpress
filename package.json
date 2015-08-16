@@ -1,0 +1,25 @@
+{
+    "name": "mjs-wordpress-demo",
+    "version": "0.1.0",
+    "license" : "BSD-3-Clause",
+    "dependencies": {
+        "montage": "~0.15.0",
+        "digit": "~0.5.1",
+        "montage-wordpress": "montagestudio/montage-wordpress"
+    },
+    "devDependencies": {
+        "montage-testing": "~0.4.0"
+    },
+    "exclude": [
+        "run-tests.html",
+        "test"
+    ],
+    "bundle": [
+        "ui/main.reel"
+    ],
+    "author": {
+        "name": "Ryan Paul",
+        "email": "",
+        "url": ""
+    }
+}

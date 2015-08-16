@@ -1,0 +1,44 @@
+.Card {
+
+}
+
+.Card-face {
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    /*backface-visibility: hidden;*/
+}
+
+.Card-face--front {
+    /*-webkit-transform-style: preserve-3d;*/
+}
+
+.Card-face--back {
+  display: none;
+    -webkit-transform: rotateY(180deg) translateZ(100px);
+    background: hsl(0,0%, 95%);
+}
+
+.Card-image {
+    display: block;
+    width: 500px;
+    height: 500px;
+    -webkit-user-drag: none;
+}
+
+.Card-caption {
+    width: 100%;
+    background-color: black;
+}
+
+.Card-title {
+    margin: 0;
+    padding: 1em 1.5em;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 1.2px;
+    font-size: 1.5em;
+    color: white;
+}

@@ -1,2 +1,1 @@
-# wordpress-blog-flow
-Displays a Wordpress blog entries in a montage flow component using REST API
+This is a MontageJS demo that loads featured posts from a remote Wordpress blog and displays them in a touch-friendly user interface.

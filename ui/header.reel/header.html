@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "owner"}
+            }
+        },
+        "closeButton": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "closeButton"},
+                "label": "×"
+            },
+            "bindings": {
+                "classList.has('is-hidden')": {"<-": "!@owner.selectedPost"}
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
+        "logo": {
+            "prototype": "ui/logo.reel",
+            "properties": {
+                "element": {"#": "logo"}
+            }
+        },
+        "title": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "title"},
+                "value": "Ryan's Blog"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <header data-montage-id="owner" class="Header">
+        <div data-montage-id="logo"></div>
+        <h1 data-montage-id="title"></h1>
+        <button data-montage-id="closeButton" class="Header-closeButton"></button>
+    </header>
+</body>
+</html>

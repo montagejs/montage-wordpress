@@ -1,0 +1,96 @@
+.Main {
+    height: 100%;
+}
+
+/* Flow ---------------------------------------- */
+
+.Flow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.Flow * {
+-webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+}
+
+.Flow-item {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    touch-callout: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.Flow-item-wrapper {
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+.Flow-item.selected .Flow-item-wrapper {
+    background-color: transparent;
+    -webkit-animation: displaycard 1s both normal;
+            animation: displaycard 1s both normal;
+}
+
+@-webkit-keyframes displaycard {
+    0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    70% {
+        -webkit-transform: translateX(200px);
+                transform: translateX(200px);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+    }
+
+    100% {
+        -webkit-transform: translateX(100px) translateZ(1000px);
+                transform: translateX(100px) translateZ(1000px);
+    }
+}
+
+@keyframes displaycard {
+    0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    70% {
+        -webkit-transform: translateX(200px);
+                transform: translateX(200px);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+    }
+
+    100% {
+        -webkit-transform: translateX(100px) translateZ(1000px);
+                transform: translateX(100px) translateZ(1000px);
+    }
+}
+
+/* Post -------------------------------------------------------------------- */
+
+.Main .Post {
+    opacity: 0;
+    z-index: 0;
+}
+
+.Main .Post--revealed {
+    opacity: 1;
+    z-index: 15;
+    transition: opacity 500ms;
+    transition-delay: 800ms;
+}
