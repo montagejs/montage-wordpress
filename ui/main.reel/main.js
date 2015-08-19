@@ -13,5 +13,21 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
+    },
+
+    posts: {
+        value: null
+    },
+
+    enterDocument: {
+        value: function (firstTime) {
+            var self = this;
+            if (firstTime) {
+                this.templateObjects.wordpressConnector.queryPosts('featured').then(function (result) {
+                    self.posts = result;
+                })
+            }
+        }
     }
+
 });

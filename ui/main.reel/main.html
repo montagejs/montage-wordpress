@@ -158,15 +158,13 @@
         "postsController": {
             "prototype": "montage/core/range-controller",
             "bindings": {
-                "content": {"<-": "@wordpressConnector.posts"}
+                "content": {"<-": "@owner.posts"}
             }
         },
         "wordpressConnector": {
             "prototype": "montage-wordpress/core/wordpress-connector",
             "properties": {
-                "categoryFilter": "featured",
-                "host": "104.131.138.118",
-                "path": "posts"
+                "host": "104.131.138.118"
             }
         }
     }
