@@ -21,7 +21,7 @@
     "dependencies": {
         "digit": "^3.0.2",
         "montage": "montagejs/montage#master",
-        "montage-wordpress": "montagestudio/montage-wordpress#kevin-wordpress-connector"
+        "montage-wordpress": "montagestudio/montage-wordpress#master"
     },
     "devDependencies": {
         "jshint": "^2.9.5",
