@@ -1,7 +1,7 @@
 var Montage = require("montage").Montage;
 var Component = require("montage/ui/component").Component;
 
-exports.Html = Montage.create(Component, {
+exports.Html = Component.specialize({
 
     hasTemplate: { value: false },
 
