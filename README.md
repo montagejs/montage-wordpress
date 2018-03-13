@@ -5,7 +5,6 @@ This is a MontageJS demo that loads featured posts from a remote Wordpress blog 
 ![Screenshot](assets/images/screenshot.png)
 
 [Live Demo](http://montagestudio.github.io/wordpress-blog-flow/)
-[Live Demo with custom hostname](http://montagestudio.github.io/wordpress-blog-flow/?hostname=aaronrutley.com)
 
 To use your wordpress instance you will need to install WP REST API Plugin, see detailed instructions:
 - https://github.com/montagestudio/montage-wordpress/blob/master/README.md#prepare
