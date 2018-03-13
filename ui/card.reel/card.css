@@ -25,6 +25,7 @@
     width: 500px;
     height: 500px;
     -webkit-user-drag: none;
+    object-fit: cover;
 }
 
 .Card-caption {
