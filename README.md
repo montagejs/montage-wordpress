@@ -26,14 +26,14 @@ npm install
 npm run start
 ```
 
-    >**Note:** During development MontageJS applications rely on XHR to load their various components and modules,
-    which is why you will need a web server to serve the demo.
+>**Note:** During development MontageJS applications rely on XHR to load their various components and modules,
+which is why you will need a web server to serve the demo.
 
-    > You can start NodeJS http-server using command: `npm run serve`
-    Then open your favorite browser at (http://localhost:8080).
+> You can start NodeJS http-server using command: `npm run serve`
+Then open your favorite browser at (http://localhost:8080).
 
-    > If you happen to have [minit](https://github.com/montagejs/minit), the Montage Initializer, installed 
-    (`npm install minit -g`) you can run `minit serve` from within the demo directory to set up a server on demand.
+> If you happen to have [minit](https://github.com/montagejs/minit), the Montage Initializer, installed 
+(`npm install minit -g`) you can run `minit serve` from within the demo directory to set up a server on demand.
 
 
 ### Run and build dist locally 
