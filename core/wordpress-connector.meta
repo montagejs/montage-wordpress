@@ -1,7 +1,7 @@
 {
     "wordpressConnector_host": {
         "prototype": "montage/core/meta/property-blueprint",
-        "properties": {
+        "values": {
             "name": "host",
             "blueprint": {
                 "@": "root"
@@ -13,7 +13,7 @@
 
     "wordpressConnector_path": {
         "prototype": "montage/core/meta/property-blueprint",
-        "properties": {
+        "values": {
             "name": "path",
             "blueprint": {
                 "@": "root"
@@ -25,7 +25,7 @@
 
     "wordpressConnector_categoryFilter": {
         "prototype": "montage/core/meta/property-blueprint",
-        "properties": {
+        "values": {
             "name": "categoryFilter",
             "blueprint": {
                 "@": "root"
@@ -37,7 +37,7 @@
 
     "root": {
         "prototype": "montage/core/meta/module-blueprint",
-        "properties": {
+        "values": {
             "name": "WordpressController",
             "customPrototype": false,
             "propertyBlueprints": [

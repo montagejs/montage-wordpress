@@ -6,27 +6,23 @@
     <script type="text/montage-serialization">
     {
         "owner": {
-            "properties": {
+            "values": {
                 "element": {"#": "owner"}
             }
         },
         "image": {
             "prototype": "digit/ui/image.reel",
-            "properties": {
+            "values": {
                 "element": {"#": "image"},
-                "crossOrigin": null
-            },
-            "bindings": {
+                "crossOrigin": null,
                 "src": {"<-": "@owner.post.better_featured_image.source_url"}
             }
         },
         "text1": {
             "prototype": "montage/ui/text.reel",
-            "properties": {
+            "values": {
                 "element": {"#": "text1"},
-                "value": "Text"
-            },
-            "bindings": {
+                "value": "Text",
                 "value": {"<-": "@owner.post.title.rendered"}
             }
         }

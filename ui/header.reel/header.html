@@ -6,17 +6,15 @@
     <script type="text/montage-serialization">
     {
         "owner": {
-            "properties": {
+            "values": {
                 "element": {"#": "owner"}
             }
         },
         "closeButton": {
             "prototype": "digit/ui/button.reel",
-            "properties": {
+            "values": {
                 "element": {"#": "closeButton"},
-                "label": "×"
-            },
-            "bindings": {
+                "label": "×",
                 "classList.has('is-hidden')": {"<-": "!@owner.selectedPost"}
             },
             "listeners": [
@@ -28,13 +26,13 @@
         },
         "logo": {
             "prototype": "ui/logo.reel",
-            "properties": {
+            "values": {
                 "element": {"#": "logo"}
             }
         },
         "title": {
             "prototype": "digit/ui/title.reel",
-            "properties": {
+            "values": {
                 "element": {"#": "title"},
                 "value": "Blog Reader"
             }

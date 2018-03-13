@@ -8,37 +8,31 @@
     <script type="text/montage-serialization">
     {
         "owner": {
-            "properties": {
+            "values": {
                 "element": {"#": "owner"}
             }
         },
         "postContent": {
             "prototype": "ui/html.reel",
-            "properties": {
+            "values": {
                 "element": {"#": "postContent"},
-                "value": "Text"
-            },
-            "bindings": {
+                "value": "Text",
                 "value": {"<-": "@owner.post.content.rendered"}
             }
         },
         "postHeading": {
             "prototype": "montage/ui/text.reel",
-            "properties": {
+            "values": {
                 "element": {"#": "postHeading"},
-                "value": "Text"
-            },
-            "bindings": {
+                "value": "Text",
                 "value": {"<-": "@owner.post.title.rendered"}
             }
         },
         "postImage": {
             "prototype": "digit/ui/image.reel",
-            "properties": {
+            "values": {
                 "element": {"#": "postImage"},
-                "crossOrigin": null
-            },
-            "bindings": {
+                "crossOrigin": null,
                 "src": {"<-": "@owner.post.better_featured_image.source_url"}
             }
         }

@@ -9,13 +9,13 @@
     <script type="text/montage-serialization">
     {
         "owner": {
-            "properties": {
+            "values": {
                 "element": {"#": "main"}
             }
         },
         "actionEventListener": {
             "prototype": "montage/core/event/action-event-listener",
-            "properties": {
+            "values": {
                 "action": "clearSelection",
                 "handler": {"@": "postsController"}
             },
@@ -25,16 +25,14 @@
         },
         "card": {
             "prototype": "ui/card.reel",
-            "properties": {
-                "element": {"#": "card"}
-            },
-            "bindings": {
+            "values": {
+                "element": {"#": "card"},
                 "post": {"<-": "@flow:iteration.object"}
             }
         },
         "flow": {
             "prototype": "montage/ui/flow.reel",
-            "properties": {
+            "values": {
                 "element": {"#": "flow"},
                 "cameraFov": 50,
                 "cameraPosition": [
@@ -131,10 +129,8 @@
         },
         "header": {
             "prototype": "ui/header.reel",
-            "properties": {
-                "element": {"#": "header"}
-            },
-            "bindings": {
+            "values": {
+                "element": {"#": "header"},
                 "selectedPost": {"<-": "@postsController.selection.0"}
             },
             "listeners": [
@@ -147,23 +143,21 @@
         },
         "post": {
             "prototype": "ui/post.reel",
-            "properties": {
-                "element": {"#": "post"}
-            },
-            "bindings": {
+            "values": {
+                "element": {"#": "post"},
                 "classList.has('Post--revealed')": {"<-": "@postsController.selection.0"},
                 "post": {"<-": "@postsController.selection.0"}
             }
         },
         "postsController": {
             "prototype": "montage/core/range-controller",
-            "bindings": {
+            "values": {
                 "content": {"<-": "@owner.posts"}
             }
         },
         "wordpressConnector": {
             "prototype": "core/wordpress-connector",
-            "properties": {
+            "values": {
                 "host": {"<-": "@owner.hostname"}
             }
         }
