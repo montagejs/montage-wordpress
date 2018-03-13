@@ -1,0 +1,77 @@
+{
+    "wordpressConnector_host": {
+        "prototype": "montage/core/meta/property-blueprint",
+        "properties": {
+            "name": "host",
+            "blueprint": {
+                "@": "root"
+            },
+            "valueType": "string",
+            "helpKey": ""
+        }
+    },
+
+    "wordpressConnector_path": {
+        "prototype": "montage/core/meta/property-blueprint",
+        "properties": {
+            "name": "path",
+            "blueprint": {
+                "@": "root"
+            },
+            "valueType": "string",
+            "helpKey": ""
+        }
+    },
+
+    "wordpressConnector_categoryFilter": {
+        "prototype": "montage/core/meta/property-blueprint",
+        "properties": {
+            "name": "categoryFilter",
+            "blueprint": {
+                "@": "root"
+            },
+            "valueType": "string",
+            "helpKey": ""
+        }
+    },
+
+    "root": {
+        "prototype": "montage/core/meta/module-blueprint",
+        "properties": {
+            "name": "WordpressController",
+            "customPrototype": false,
+            "propertyBlueprints": [
+                {
+                    "@": "wordpressConnector_host"
+                },
+                {
+                    "@": "wordpressConnector_path"
+                },
+                {
+                    "@": "wordpressConnector_categoryFilter"
+                }
+            ],
+            "propertyBlueprintGroups": {
+                "wordpressConnector": [
+                    {
+                        "@": "wordpressConnector_host"
+                    },
+                    {
+                        "@": "wordpressConnector_path"
+                    },
+                    {
+                        "@": "wordpressConnector_categoryFilter"
+                    }
+                ]
+            },
+            "propertyValidationRules": {},
+            "blueprintModule": {
+                "%": "core/wordpress-connector.meta"
+            },
+            "exportName": "WordpressConnector",
+            "module": {
+                "%": "core/wordpress-connector"
+            }
+        }
+    }
+}

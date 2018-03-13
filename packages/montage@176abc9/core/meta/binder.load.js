@@ -1,0 +1,1 @@
+montageDefine("176abc9","core/meta/binder",{dependencies:["./model"],factory:function(e,n,d){n.Binder=e("./model").Model}});

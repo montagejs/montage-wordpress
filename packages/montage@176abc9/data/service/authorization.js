@@ -1,0 +1,1 @@
+var Montage=require("core/core").Montage,Authorization=exports.Authorization=Montage.specialize({});

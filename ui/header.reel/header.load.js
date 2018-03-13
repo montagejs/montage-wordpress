@@ -1,0 +1,1 @@
+montageDefine("5d6e8bf","ui/header.reel/header",{dependencies:["montage/ui/component"],factory:function(e,n,t){var o=e("montage/ui/component").Component;n.Header=o.specialize({constructor:{value:function(){this["super"]()}},handleCloseButtonAction:{value:function(){this.dispatchEventNamed("hidePost",!0,!0)}}})}});

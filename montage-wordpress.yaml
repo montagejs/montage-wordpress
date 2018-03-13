@@ -1,0 +1,41 @@
+version: "3.1"
+
+services:
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:4.7.1
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
+      - "./shared/custom.ini:/usr/local/etc/php/conf.d/upload.ini"
+    environment:
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_PASSWORD: kaazing
+    networks:
+      - back
+      - front
+
+  montage-wordpress-service:
+    image: montagestudio/montage-auth-service:develop-SNAPSHOT
+    volumes:
+      - ./:/home/montage-auth-service/public/:ro
+    environment:
+    networks:
+      - front
+  db:
+    image: mysql:5.7
+    restart: always
+    volumes:
+       - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: montag3W0rdpress
+    networks:
+      - back
+
+volumes:
+  db_data:
+
+networks:
+  back: 
+  front:

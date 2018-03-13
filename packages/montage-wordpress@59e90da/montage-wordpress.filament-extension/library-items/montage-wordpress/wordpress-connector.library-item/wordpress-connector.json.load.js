@@ -1,0 +1,1 @@
+montageDefine("59e90da","montage-wordpress.filament-extension/library-items/montage-wordpress/wordpress-connector.library-item/wordpress-connector.json",{exports:{name:"Wordpress Connector",description:"Retrieves content from the specified Wordpress Site",iconUrl:"wordpress-connector.png"}});

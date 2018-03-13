@@ -1,0 +1,1 @@
+montageDefine("8ae41cc","lib/formats",{dependencies:[],factory:function(e,t,r){"use strict";var n=String.prototype.replace,c=/%20/g;r.exports={"default":"RFC3986",formatters:{RFC1738:function(e){return n.call(e,c,"+")},RFC3986:function(e){return e}},RFC1738:"RFC1738",RFC3986:"RFC3986"}}});

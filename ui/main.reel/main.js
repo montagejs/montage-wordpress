@@ -1,0 +1,1 @@
+var Component=require("montage/ui/component").Component;exports.Main=Component.specialize({constructor:{value:function(){this["super"]()}},posts:{value:null},enterDocument:{value:function(e){var t=this;e&&this.templateObjects.wordpressConnector.queryPosts("featured").then(function(e){t.posts=e})}}});

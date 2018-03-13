@@ -1,0 +1,1 @@
+montageDefine("85c0ea9","shim-function",{dependencies:[],factory:function(n,t,e){e.exports=Function,Function.noop=function(){},Function.identity=function(n){return n},Function.by=function(n,t){t=t||Object.compare,n=n||Function.identity;var e=function(e,c){return t(n(e),n(c))};return e.compare=t,e.by=n,e},Function.get=function(n){return function(t){return Object.get(t,n)}}}});
