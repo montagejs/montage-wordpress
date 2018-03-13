@@ -11,7 +11,7 @@ To use your wordpress instance you will need to install WP REST API Plugin, see 
 
 ### Quick Start
 
-To run the Popcorn demo locally, follow these steps:
+To run locally, follow these steps:
 
 1. Clone the popcorn [GitHub repo](https://github.com/montagestudio/wordpress-blog-flow) in your desktop.
 ```
@@ -55,7 +55,7 @@ npm run serve:dist
 
 ### Application Structure
 
-The contents of the Popcorn sample application are structured into the following directories and files:
+The contents of the application are structured into the following directories and files:
 
 * assets/ — Contains global styles and images for the application.
 * node_modules/ — Contains the dependencies that power the application in development.
