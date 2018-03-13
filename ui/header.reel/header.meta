@@ -1,7 +1,7 @@
 {
   "blueprint_component_reference": {
     "prototype": "montage/core/meta/blueprint-reference",
-    "properties": {
+    "values": {
       "valueReference": {
         "blueprintName": "Component",
         "blueprintModule": {
@@ -12,14 +12,14 @@
   },
   "blueprint_unnamed_hidePost": {
     "prototype": "montage/core/meta/event-blueprint",
-    "properties": {
+    "values": {
       "name": "hidePost",
       "blueprint": {"@": "root"}
     }
   },
   "root": {
     "prototype": "montage/core/meta/module-blueprint",
-    "properties": {
+    "values": {
       "name": null,
       "blueprintModule": {
         "%": "ui/header.reel/header.meta"

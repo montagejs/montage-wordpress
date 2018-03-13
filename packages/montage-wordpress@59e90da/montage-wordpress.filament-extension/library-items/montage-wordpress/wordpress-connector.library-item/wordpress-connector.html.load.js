@@ -1,1 +1,0 @@
-montageDefine("59e90da","montage-wordpress.filament-extension/library-items/montage-wordpress/wordpress-connector.library-item/wordpress-connector.html",{"text":"<!DOCTYPE html><html><head><title></title><script type=text/montage-serialization>{\"wordpressConnector\":{\"prototype\":\"montage-wordpress/core/wordpress-connector\"}}</script></head><body></body></html>"})
