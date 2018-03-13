@@ -70,7 +70,7 @@ To use your wordpress instance you will need to install WP REST API Plugin, see 
 Then change default `hostname` in [./ui/main.reel/main.js#L24](./ui/main.reel/main.js#L24) from `demo.wp-api.org` to your wordpress domain.
 
 To test custom domain you can also pass hostname query parameter, example:
-- http://montagestudio.github.io/wordpress-blog-flow/?hostname=blog.fabletics.com
+- http://montagejs.github.io/montage-wordpress?hostname=blog.fabletics.com
 
 ## Use you own Wordpress instance
 
