@@ -10,9 +10,9 @@ This is a MontageJS demo that loads featured posts from a remote Wordpress blog 
 
 To run locally, follow these steps:
 
-1. Clone the popcorn [GitHub repo](https://github.com/montagestudio/wordpress-blog-flow) in your desktop.
+1. Clone the popcorn [GitHub repo](https://github.com/montagejs/montage-wordpress) in your desktop.
 ```
-git clone git@github.com:montagestudio/wordpress-blog-flow.git
+git clone git@github.com:montagejs/montage-wordpress.git
 ```
 
 2. Install Node modules dependencies
