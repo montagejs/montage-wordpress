@@ -1,15 +1,15 @@
 {
-    "name": "wordpress-blog-flow",
+    "name": "montage-wordpress",
     "version": "0.1.0",
     "license": "BSD-3-Clause",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/montagestudio/wordpress-blog-flow.git"
+        "url": "git+https://github.com/montagejs/montage-wordpress.git"
     },
     "bugs": {
-        "url": "https://github.com/montagestudio/wordpress-blog-flow/issues"
+        "url": "https://github.com/montagejs/montage-wordpress/issues"
     },
-    "homepage": "https://github.com/montagestudio/wordpress-blog-flow#readme",
+    "homepage": "https://github.com/montagejs/montage-wordpress#readme",
     "scripts": {
         "lint": "jshint .",
         "build": "mop .",
@@ -20,8 +20,7 @@
     },
     "dependencies": {
         "digit": "^3.0.2",
-        "montage": "montagejs/montage#master",
-        "montage-wordpress": "montagestudio/montage-wordpress#master"
+        "montage": "montagejs/montage#master"
     },
     "devDependencies": {
         "jshint": "^2.9.5",

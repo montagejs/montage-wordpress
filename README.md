@@ -6,7 +6,6 @@ This is a MontageJS demo that loads featured posts from a remote Wordpress blog 
 
 [Live Demo](http://montagestudio.github.io/wordpress-blog-flow/)
 
-
 ### Quick Start
 
 To run locally, follow these steps:
@@ -72,6 +71,51 @@ Then change default `hostname` in [./ui/main.reel/main.js#L24](./ui/main.reel/ma
 
 To test custom domain you can also pass hostname query parameter, example:
 - http://montagestudio.github.io/wordpress-blog-flow/?hostname=blog.fabletics.com
+
+## Use you own Wordpress instance
+
+### Prepare
+
+We need [WP REST API](http://wp-api.org/) and [WP OAuth Server](https://wp-oauth.com/) on your WordPress site. Directly open WordPress plugin page and search and install these 2 plugins.
+
+### Cross domian
+
+If your client is running on differnt domian. You need modify above 2 plugins a little bit to make them support cross domain ajax calls.
+
+##### WP REST API
+
+In WordPress plugin page clicks edit for WP REST API plugin. Modify plugin.php file. Search `json_send_cors_headers` function and modify as following: 
+
+```php
+if ( $origin ) {
+    header( 'Access-Control-Allow-Origin: *' );
+    header( 'Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE' );
+    header( 'Access-Control-Allow-Credentials: true' );
+    header( 'Access-Control-Allow-Headers: Content-Type, X-Requested-With, Authorization' );
+}
+```
+
+##### WP OAuth Server
+
+Also in WordPress plugin page, let's edit WordPress OAuth Server plugin. In wp-oauth.php file. Change first couple lines as following
+
+```php
+if (!function_exists('add_filter')) {
+    header('Status: 403 Forbidden');
+    header('HTTP/1.1 403 Forbidden');
+    exit();
+}else{
+    header( 'Access-Control-Allow-Origin: http://wordpress.montage.com' );
+    header( 'Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE' );
+    header( 'Access-Control-Allow-Credentials: true' );
+    header( 'Access-Control-Allow-Headers: Content-Type, X-Requested-With, Authorization' );
+    if($_SERVER['REQUEST_METHOD'] == 'OPTIONS'){
+        exit();
+    }
+}
+```
+
+Note because we need send Basic Authorization data when doing token verifying. So `Access-Control-Allow-Origin` must be set to a certain domain.
 
 ## Credit
 
