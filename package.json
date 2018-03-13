@@ -14,9 +14,9 @@
         "lint": "jshint .",
         "build": "mop .",
         "publish": "git checkout gh-pages && git subtree push --prefix dist origin gh-pages",
-        "start": "npm run start:app",
-        "start:app": "minit serve",
-        "start:dist": "minit serve -r dist"
+        "start": "npm run serve",
+        "serve": "minit serve",
+        "serve:dist": "minit serve -r dist"
     },
     "dependencies": {
         "digit": "^3.0.2",
