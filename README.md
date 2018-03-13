@@ -1,8 +1,8 @@
-# wordpress-blog-flow Readme
+# wordpress-blog-flow
 
 This is a MontageJS demo that loads featured posts from a remote Wordpress blog and displays them in a touch-friendly user interface.
 
-![Screenshot](assets/image/screenshot.png)
+![Screenshot](assets/images/screenshot.png)
 
 [Live Demo](http://montagestudio.github.io/wordpress-blog-flow/)
 [Live Demo with custom hostname](http://montagestudio.github.io/wordpress-blog-flow/?hostname=aaronrutley.com)
