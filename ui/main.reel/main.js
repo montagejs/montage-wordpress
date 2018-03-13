@@ -24,8 +24,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             var self = this;
             if (firstTime) {
                 this.templateObjects.wordpressConnector.queryPosts('featured').then(function (result) {
-                    console.log(result[0])
-                    self.posts = result;
+                    self.posts = result.map(function (post) {
+                        post.better_featured_image = post.better_featured_image || {};
+                        post.better_featured_image.source_url = '../../assets/images/default.jpg';
+                        return post;
+                    });
                 })
             }
         }
