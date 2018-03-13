@@ -12,7 +12,16 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     constructor: {
         value: function Main() {
             this.super();
+
+            var hostname = this.getParameterByName('hostname');
+            if (hostname) {
+                this.hostname = hostname;
+            }
         }
+    },
+
+    hostname: {
+        value: 'demo.wp-api.org'
     },
 
     posts: {
@@ -21,6 +30,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
     enterDocument: {
         value: function (firstTime) {
+
             var self = this;
             if (firstTime) {
                 this.templateObjects.wordpressConnector.queryPosts('featured').then(function (result) {
@@ -32,6 +42,26 @@ exports.Main = Component.specialize(/** @lends Main# */ {
                 })
             }
         }
-    }
+    },
+
+
+    getParameterByName: {
+            value: function (name, url) {
+            if (!url) {
+                url = window.location.href;
+            }
+
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) {
+                return null;
+            } else if (!results[2]) {
+                return '';
+            } else {
+                return decodeURIComponent(results[2].replace(/\+/g, " "));   
+            }
+        }
+    },
 
 });

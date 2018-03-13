@@ -164,7 +164,7 @@
         "wordpressConnector": {
             "prototype": "montage-wordpress/core/wordpress-connector",
             "properties": {
-                "host": "demo.wp-api.org"
+                "host": {"<-": "@owner.hostname"}
             }
         }
     }
