@@ -1,11 +1,10 @@
-# wordpress-blog-flow Readme
+# Wordpress Blog Flow Readme
 
 This is a MontageJS demo that loads featured posts from a remote Wordpress blog and displays them in a touch-friendly user interface.
 
-![Screenshot](assets/image/screenshot.png)
+![Screenshot](assets/images/screenshot.png)
 
 [Live Demo](http://montagestudio.github.io/wordpress-blog-flow/)
-[Live Demo with custom hostname](http://montagestudio.github.io/wordpress-blog-flow/?hostname=aaronrutley.com)
 
 To use your wordpress instance you will need to install WP REST API Plugin, see detailed instructions:
 - https://github.com/montagestudio/montage-wordpress/blob/master/README.md#prepare
@@ -25,6 +24,10 @@ npm install
 ```
 
 3. Use NodeJS http-server or Spin up your preferred HTTP server and point your browser to the associated port to serve the popcorn directory.
+
+```
+npm run start
+```
 
     >**Note:** During development MontageJS applications rely on XHR to load their various components and modules,
     which is why you will need a web server to serve the demo.
