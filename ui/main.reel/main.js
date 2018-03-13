@@ -35,7 +35,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
             if (firstTime) {
                 this.templateObjects.wordpressConnector.queryPosts('featured').then(function (result) {
                     self.posts = result.map(function (post) {
-                        post.better_featured_image = post.better_featured_image || post.featured_image;
+                        post.better_featured_image = post.better_featured_image || post.featured_image || {};
                         post.better_featured_image.source_url = post.better_featured_image.source || post.better_featured_image.source_url || '../../assets/images/default.jpg';
                         return post;
                     });
