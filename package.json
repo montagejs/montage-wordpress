@@ -4,12 +4,12 @@
     "license": "BSD-3-Clause",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/montagestudio/montage-wordpress.git"
+        "url": "git+https://github.com/montagestudio/wordpress-blog-flow.git"
     },
     "bugs": {
-        "url": "https://github.com/montagestudio/montage-wordpress/issues"
+        "url": "https://github.com/montagestudio/wordpress-blog-flow/issues"
     },
-    "homepage": "https://github.com/montagestudio/montage-wordpress#readme",
+    "homepage": "https://github.com/montagestudio/wordpress-blog-flow#readme",
     "scripts": {
         "lint": "jshint .",
         "build": "mop .",
