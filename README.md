@@ -4,7 +4,7 @@ This is a MontageJS demo that loads featured posts from a remote Wordpress blog 
 
 ![Screenshot](assets/images/screenshot.png)
 
-[Live Demo](http://montagestudio.github.io/wordpress-blog-flow/)
+[Live Demo](http://montagejs.github.io/montage-wordpress/)
 
 ### Quick Start
 
